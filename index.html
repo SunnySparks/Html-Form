@@ -6,13 +6,14 @@
     <title>HTML Forms</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class='sing-container'>
         <div>
-            <p>Already have an Intuit account?</p>
-            <a href="#">I forgot my User ID or Password</a>
+            <p class="letter">Already have an Intuit account?</p>
+            <a href="#" class="letter">I forgot my User ID or Password</a>
         </div>
         <div>
             <button class='sign'><i class="fa fa-unlock-alt" aria-hidden="true"></i>Sign in</button>
@@ -20,26 +21,32 @@
         
     </div>
     <section class='container'>
-        <h1>Title</h1>
-        <div class='icons'><img class='drop' src='img/drop.png' height="30"><p>mint</p><img src='img/a.png' height="30"><p>quickbooks</p><img src='img/check.png' height="30"><p>turbotax</p></div>
+        <h1>INTUIT</h1>
+        <div class='icons'><img class='drop' src='img/drop.png' height="30"><p class="letter">mint</p><img src='img/a.png' height="30"><p class="letter">quickbooks</p><img src='img/check.png' height="30"><p class="letter">turbotax</p></div>
         <div class='form-container'>
             <form>
-                <legend>Form Title</legend>
-                <p>Description</p>
-                <a>Link</a>
-                <label for='name'>Email Adress</label>
+                <legend class="letter" id="create">Create an Intuit account</legend>
+                <p class="letter" id="one-account">One account for everything Intuit, including Mint.</p>
+                <a class="letter" id="learn">Learn more</a>
+                <br>
+                <label for='name' class="letter" id="email">Email Adress</label>
                 <input type='email' id='name' value='name'></br>
-                <label for='phone'>Phone</label>
+                <label for='phone' class="letter">Phone</label>
                 <input type='number' id='phone' value='phone'></br>
-                <label for='password'>Password</label>
+                <label for='password' class="letter">Password</label>
                 <input type='password' id='password' value='password'></br>
-                <input type="submit" value='Submit'>
-
+                <button name="submit"><i class="em em-lock" aria-role="presentation" aria-label="LOCK"></i class="letter">Create account</button>
+                <!--<input type="submit" value='Submit'>-->
+                <p class="letter">By clicking Create account, you agree to our <a>Terms</a> and have read and aknowledge our <a>Privacy Statement.</a></p>
+                <span class="letter">Invisible reCAPTCHA by Google <a>Privacy Policy</a> and <a>Terms of Use</a></span>
             </form>
         </div>
 
 
     </section>
-    
+    <footer>
+        <span class="letter">Legal Privacy Security</span>
+        <span class="letter">©2020 Intuit, Inc. All rights reserved. Intuit, Quickbooks, QB, TurboTax, ProConnect and Mint</span>
+    </footer>
 </body>
 </html>
