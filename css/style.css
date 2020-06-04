@@ -1,0 +1,49 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(236, 238, 241);
+    width:1200px;
+    position: absolute;
+}
+.sing-container{
+    width:25%;
+    height: 40px;
+    padding: 5px;
+    float: right;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:-ms-flexbox;
+    flex-flow: row wrap;
+}
+.sign{
+    color:white;
+    background: rgb(67, 67, 228);
+    padding: 5px;
+    margin:5px;
+    
+}
+.sign i{
+    margin-left:5px;
+}
+.container{
+    text-align: center;
+    margin-top:80px;
+}
+.icons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.form-container{
+    
+    display:flex;
+    justify-content: center;
+}
+form{
+    width:40%;
+    height:500px;
+    border:1px solid black
+}
